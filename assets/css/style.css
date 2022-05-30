@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@1,300;1,400&display=swap');
+
+
+:root {
+    --fonte-principal:'Bebas Neue', cursive;
+    --fonte-secundaria:'Roboto', sans-serif;
+}
+body{
+    background-color: #383B40;
+    background-image: url(../images/walpaper.jpg);
+    background-size: cover;
+}
+h1{
+    font-family: var(--fonte-principal);
+    font-size: 3em;
+    color: #f2f2f2;
+}
+h2{
+    padding-top: 10px;
+    font-family: var(--fonte-secundaria);
+    font-size: 1em;
+    color: #bfbfbf;
+}
+
+h2 a{
+    text-decoration: underline;
+    color:rgb(230, 218, 218);
+}
+.name-logo{
+    font-size: 1.7em;
+    display: flex;
+    margin-left: 10px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    width: 900px;
+    justify-content: space-between;
+}
+header{
+    display: flex;
+    height: 100px;
+    justify-content: center;
+}
+
+.logo{
+    align-items: center;
+    display: flex;
+}
+
+.logo img{
+    margin-top: 10px;
+    width: 80px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul, nav li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a{
+    color: #f2f2f2;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover{
+    border-bottom: 1px solid #f2f2f2;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+}
+
+section img{
+    width: 50%;
+}
+
+.btns{
+    display: flex;
+    font-family: var(--fonte-secundaria);
+    font-size: 0.8em;
+    margin: 30px;
+}
+
+.btns a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    border: 2px solid #bfbfbf;
+    border-radius: 30px;
+    padding: 14px;
+    margin: 0 10px 0 0;
+}
+
+.btns a:hover{
+    background-color: #fff;
+    color: #000000;
+    transition: 0.5s;
+}
+
+footer{
+    position: sticky;
+}
+
+@media(max-width:600px){
+
+    .logo img{
+        width: 50px;
+        margin-left: 30px;
+        }
+
+    .container{
+        display:block;
+        margin: 50px;
+    }  
+    
+    h1{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    h2{
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    .menu{
+        display: none;
+    }
+
+    section{
+        display: flex;
+    }
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .btns{
+        display: block;
+        font-size: 11px;
+        text-align: center;
+    }
+}
